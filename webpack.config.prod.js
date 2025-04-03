@@ -8,6 +8,6 @@ module.exports = merge(commonConfig, {
   output: {
     path: path.join(__dirname, 'docs'),
     filename: 'bundle.js',
-    assetModuleFilename: 'assets/[name][ext]',
+    assetModuleFilename: 'assets/[hash][ext]',
   },
 });
