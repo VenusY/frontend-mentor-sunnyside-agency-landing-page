@@ -55,3 +55,7 @@ button {
 img, a, time {
 	display: block;
 }
+
+img {
+	width: 100%;
+}
