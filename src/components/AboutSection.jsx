@@ -60,7 +60,7 @@ export default function AboutSection() {
       </div>
 
       <div className='about-section__container'>
-        <section className='services'>
+        <section className='services services--graphic-design'>
           <h2 className='services__heading'>Graphic Design</h2>
           <p className='services__description'>
             Great design makes you memorable. We deliver artwork that
@@ -69,7 +69,7 @@ export default function AboutSection() {
           </p>
         </section>
 
-        <section className='services'>
+        <section className='services services--photography'>
           <h2 className='services__heading'>Photography</h2>
           <p className='services__description'>
             Increase your credibility by getting the most stunning, high-quality
