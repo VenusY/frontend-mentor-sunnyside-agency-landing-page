@@ -1,3 +1,5 @@
+import '../styles/scss/Header.scss';
+
 export default function Header() {
   return (
     <header className='header'>
@@ -18,6 +20,14 @@ export default function Header() {
           </a>
           <button className='links__contact-button'>Contact</button>
         </div>
+
+        <button className='nav-bar__menu-button'>
+          <img
+            src={require('../images/icon-hamburger.svg')}
+            alt='Hamburger menu'
+            className='nav-bar__hamburger'
+          />
+        </button>
       </nav>
 
       <section className='intro'>
