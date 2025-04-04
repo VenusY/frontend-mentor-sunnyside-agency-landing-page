@@ -1,3 +1,5 @@
+import '../styles/scss/AboutSection.scss';
+
 export default function AboutSection() {
   return (
     <div className='about-section'>
@@ -17,12 +19,12 @@ export default function AboutSection() {
         <img
           src={require('../images/mobile/image-transform.jpg')}
           alt='Egg'
-          className='about-section__image'
+          className='about-section__image about-section__image--mobile'
         />
         <img
           src={require('../images/desktop/image-transform.jpg')}
           alt='Egg'
-          className='about-section__image'
+          className='about-section__image about-section__image--desktop'
         />
       </div>
 
@@ -42,12 +44,12 @@ export default function AboutSection() {
         <img
           src={require('../images/mobile/image-stand-out.jpg')}
           alt='Cup'
-          className='about-section__image'
+          className='about-section__image about-section__image--mobile'
         />
         <img
           src={require('../images/desktop/image-stand-out.jpg')}
           alt='Cup'
-          className='about-section__image'
+          className='about-section__image about-section__image--desktop'
         />
       </div>
 
