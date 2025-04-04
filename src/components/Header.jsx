@@ -32,7 +32,11 @@ export default function Header() {
 
       <section className='intro'>
         <h1 className='intro__heading'>We Are Creatives</h1>
-        <div className='intro__arrow'></div>
+        <img
+          src={require('../images/icon-arrow-down.svg')}
+          alt='Arrow'
+          className='intro__arrow'
+        />
       </section>
     </header>
   );
