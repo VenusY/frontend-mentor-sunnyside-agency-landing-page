@@ -11,7 +11,10 @@ export default function AboutSection() {
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <a href='#' className='text-box__learn-more-button'>
+          <a
+            href='#'
+            className='text-box__learn-more-button text-box__learn-more-button--yellow'
+          >
             Learn More
           </a>
         </section>
@@ -36,7 +39,10 @@ export default function AboutSection() {
             photographers, videographers, and copywriters, we'll build and
             extend your brand in digital places.
           </p>
-          <a href='#' className='text-box__learn-more-button'>
+          <a
+            href='#'
+            className='text-box__learn-more-button text-box__learn-more-button--red'
+          >
             Learn More
           </a>
         </section>
