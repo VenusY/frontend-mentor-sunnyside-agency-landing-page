@@ -153,3 +153,11 @@
     }
   }
 }
+
+@media screen and (min-width: 475px) {
+  .header {
+    background: url('../../images/desktop/image-header.jpg');
+    background-size: cover;
+    background-position: bottom;
+  }
+}
