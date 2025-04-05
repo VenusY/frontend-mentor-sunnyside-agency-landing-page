@@ -23,6 +23,10 @@
   text-align: center;
   color: var(--very-dark-desaturated-blue);
 
+  & > * {
+    max-width: 500px;
+  }
+
   &__heading {
     margin-bottom: u.rem(20);
     font-family: var(--ff-fraunces);
@@ -120,5 +124,17 @@
     font-weight: 600;
     letter-spacing: u.rem(-0.3);
     line-height: 1.6;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .services {
+    &--graphic-design {
+      background: url('../../images/desktop/image-graphic-design.jpg');
+    }
+
+    &--photography {
+      background: url('../../images/desktop/image-photography.jpg');
+    }
   }
 }
