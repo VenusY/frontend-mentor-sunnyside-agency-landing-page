@@ -1,0 +1,14 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__image {
+    &--mobile {
+      width: 50%;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}
