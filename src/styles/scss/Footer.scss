@@ -27,29 +27,47 @@
     font-weight: 600;
     color: var(--dark-teal);
     text-decoration: none;
-    transition: color 150ms linear;
+    transition: color 100ms linear;
 
     &:hover,
     &:focus-visible {
       color: var(--white);
     }
   }
+}
 
-  &__socials {
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  &__social-link {
-    width: 16px;
-    transition: transform 100ms ease-in-out;
+    width: 18px;
+    height: 18px;
+    transition: transform 150ms ease-in-out;
 
     &:hover,
     &:focus-visible {
       transform: translateY(-4px) scale(1.2);
+
+      .socials__icon-fill {
+        fill: var(--white);
+      }
     }
+  }
+
+  &__icon {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__icon-fill {
+    transition: fill 150ms ease-in-out;
   }
 }
