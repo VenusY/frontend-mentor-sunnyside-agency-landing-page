@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className='footer'>
       <img
-        src={require('../images/logo.svg')}
+        src={require('../images/logo-footer.svg')}
         alt='Logo'
         className='footer__logo'
       />
