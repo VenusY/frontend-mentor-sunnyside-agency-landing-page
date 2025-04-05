@@ -21,6 +21,10 @@
   align-items: center;
   text-align: center;
 
+  & > * {
+    max-width: 500px;
+  }
+
   &:not(:last-child) {
     margin-bottom: u.rem(52);
   }
