@@ -27,6 +27,12 @@
     font-weight: 600;
     color: var(--dark-teal);
     text-decoration: none;
+    transition: color 150ms linear;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--white);
+    }
   }
 
   &__socials {
@@ -39,5 +45,11 @@
 
   &__social-link {
     width: 16px;
+    transition: transform 100ms ease-in-out;
+
+    &:hover,
+    &:focus-visible {
+      transform: translateY(-4px) scale(1.2);
+    }
   }
 }
