@@ -1,6 +1,13 @@
+import { useState } from 'react';
 import '../styles/scss/Header.scss';
 
 export default function Header() {
+  const [navOpen, setNavOpen] = useState(false);
+
+  function toggleNav() {
+    setNavOpen(!navOpen);
+  }
+
   return (
     <header className='header'>
       <nav className='nav-bar'>
@@ -8,20 +15,22 @@ export default function Header() {
           <img src={require('../images/logo.svg')} alt='' className='logo' />
         </a>
 
-        <div className='links'>
-          <a href='#' className='links__page'>
-            About
-          </a>
-          <a href='#' className='links__page'>
-            Services
-          </a>
-          <a href='#' className='links__page'>
-            Projects
-          </a>
+        <div className={`links ${navOpen ? 'links--visible' : ''}`}>
+          <div className='links__container'>
+            <a href='#' className='links__page'>
+              About
+            </a>
+            <a href='#' className='links__page'>
+              Services
+            </a>
+            <a href='#' className='links__page'>
+              Projects
+            </a>
+          </div>
           <button className='links__contact-button'>Contact</button>
         </div>
 
-        <button className='nav-bar__menu-button'>
+        <button className='nav-bar__menu-button' onClick={toggleNav}>
           <img
             src={require('../images/icon-hamburger.svg')}
             alt='Hamburger menu'
