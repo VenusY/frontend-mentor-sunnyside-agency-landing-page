@@ -1,0 +1,43 @@
+@use './util' as u;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 62px 20px;
+  background: var(--soft-teal);
+
+  &__logo {
+    max-width: 134px;
+    margin-bottom: u.rem(30);
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin-bottom: u.rem(70);
+  }
+
+  &__page-link {
+    font-family: var(--ff-barlow);
+    font-size: u.rem(14);
+    font-weight: 600;
+    color: var(--dark-teal);
+    text-decoration: none;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__social-link {
+    width: 16px;
+  }
+}
