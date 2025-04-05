@@ -1,0 +1,58 @@
+@use './util' as u;
+
+.testimonials-section {
+  padding: 50px 20px 68px 20px;
+
+  &__heading {
+    margin-bottom: u.rem(50);
+    font-family: var(--ff-fraunces);
+    font-size: u.rem(13);
+    font-weight: 900;
+    color: var(--greyish-blue);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: u.rem(3);
+  }
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: u.rem(52);
+  }
+
+  &__avatar {
+    width: 58px;
+    height: 58px;
+    margin-bottom: u.rem(26);
+    border-radius: 50%;
+  }
+
+  &__statement {
+    margin-bottom: u.rem(24);
+    font-family: var(--ff-barlow);
+    font-size: u.rem(14);
+    font-weight: 600;
+    color: var(--very-dark-greyish-blue);
+    line-height: 1.75;
+  }
+
+  &__name {
+    margin-bottom: u.rem(6);
+    font-family: var(--ff-fraunces);
+    font-size: u.rem(14);
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+  }
+
+  &__title {
+    font-family: var(--ff-barlow);
+    font-size: u.rem(11);
+    font-weight: 600;
+    color: var(--greyish-blue);
+  }
+}

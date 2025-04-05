@@ -1,3 +1,5 @@
+import '../styles/scss/Testimonials.scss';
+
 export default function Testimonials() {
   return (
     <section className='testimonials-section'>
