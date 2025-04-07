@@ -161,3 +161,18 @@
     background-position: bottom;
   }
 }
+
+@media screen and (min-width: 700px) {
+  .nav-bar {
+    &__menu-button {
+      width: 24px;
+    }
+  }
+
+  .logo {
+    &__link {
+      width: 168px;
+      max-width: unset;
+    }
+  }
+}
