@@ -205,3 +205,55 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .nav-bar {
+    &__menu-button {
+      display: none;
+    }
+  }
+
+  .links {
+    flex-direction: row;
+    position: static;
+    width: unset;
+    padding: 0;
+    background: transparent;
+    visibility: visible;
+    transform: scale(1);
+
+    &::before {
+      content: none;
+    }
+
+    &__container {
+      flex-direction: row;
+    }
+
+    &__page {
+      margin-right: u.rem(50);
+      font-size: u.rem(18);
+      color: var(--white);
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+        margin-right: u.rem(46);
+      }
+    }
+
+    &__contact-button {
+      background: var(--white);
+      font-size: u.rem(15);
+
+      &:hover,
+      &:focus-visible {
+        background: rgba(255, 255, 255, 0.3);
+        color: var(--white);
+      }
+    }
+  }
+}
