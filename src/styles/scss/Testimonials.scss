@@ -60,3 +60,44 @@
     color: var(--greyish-blue);
   }
 }
+
+@media screen and (min-width: 700px) {
+  .testimonials-section {
+    padding: 156px 0;
+
+    &__heading {
+      margin-bottom: u.rem(76);
+      font-size: u.rem(20);
+      letter-spacing: u.rem(5);
+    }
+  }
+
+  .testimonial {
+    & > * {
+      max-width: 340px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: u.rem(80);
+    }
+
+    &__avatar {
+      width: 70px;
+      height: 70px;
+    }
+
+    &__statement {
+      font-size: u.rem(18);
+      letter-spacing: u.rem(-0.25);
+    }
+
+    &__name {
+      margin-bottom: u.rem(8);
+      font-size: u.rem(18);
+    }
+
+    &__title {
+      font-size: u.rem(13);
+    }
+  }
+}
