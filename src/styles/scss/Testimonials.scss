@@ -101,3 +101,27 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .testimonials-section {
+    &__container {
+      display: flex;
+      justify-content: center;
+      gap: 34px;
+    }
+  }
+
+  .testimonial {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &__avatar {
+      margin-bottom: u.rem(56);
+    }
+
+    &__statement {
+      margin-bottom: u.rem(64);
+    }
+  }
+}
