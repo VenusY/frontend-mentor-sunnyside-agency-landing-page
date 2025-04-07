@@ -5,18 +5,20 @@ export default function AboutSection() {
     <div className='about-section'>
       <div className='about-section__container'>
         <section className='text-box'>
-          <h2 className='text-box__heading'>Transform your brand</h2>
-          <p className='text-box__description'>
-            We are a full-service creative agency specializing in helping brands
-            grow fast. Engage your clients through compelling visuals that do
-            most of the marketing for you.
-          </p>
-          <a
-            href='#'
-            className='text-box__learn-more-button text-box__learn-more-button--yellow'
-          >
-            Learn More
-          </a>
+          <div className='text-box__container'>
+            <h2 className='text-box__heading'>Transform your brand</h2>
+            <p className='text-box__description'>
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a
+              href='#'
+              className='text-box__learn-more-button text-box__learn-more-button--yellow'
+            >
+              Learn More
+            </a>
+          </div>
         </section>
 
         <img
@@ -33,18 +35,22 @@ export default function AboutSection() {
 
       <div className='about-section__container'>
         <section className='text-box'>
-          <h2 className='text-box__heading'>Stand out to the right audience</h2>
-          <p className='text-box__description'>
-            Using a collaborative formula of designers, researchers,
-            photographers, videographers, and copywriters, we'll build and
-            extend your brand in digital places.
-          </p>
-          <a
-            href='#'
-            className='text-box__learn-more-button text-box__learn-more-button--red'
-          >
-            Learn More
-          </a>
+          <div className='text-box__container'>
+            <h2 className='text-box__heading'>
+              Stand out to the right audience
+            </h2>
+            <p className='text-box__description'>
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we'll build and
+              extend your brand in digital places.
+            </p>
+            <a
+              href='#'
+              className='text-box__learn-more-button text-box__learn-more-button--red'
+            >
+              Learn More
+            </a>
+          </div>
         </section>
 
         <img

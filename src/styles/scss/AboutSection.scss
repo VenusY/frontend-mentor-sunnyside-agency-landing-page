@@ -23,7 +23,10 @@
   text-align: center;
   color: var(--very-dark-desaturated-blue);
 
-  & > * {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 500px;
   }
 
@@ -192,6 +195,7 @@
 
       &:first-child {
         .text-box {
+          align-items: end;
           order: -1;
         }
       }
@@ -212,12 +216,24 @@
   }
 
   .text-box {
+    justify-content: center;
     align-items: start;
     width: 50%;
     text-align: start;
+
+    &__container {
+      align-items: start;
+      max-width: 440px;
+    }
   }
 
   .services {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text-box {
+    padding: 155px 110px;
   }
 }
