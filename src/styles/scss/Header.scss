@@ -208,6 +208,8 @@
 
 @media screen and (min-width: 1200px) {
   .nav-bar {
+    margin-bottom: u.rem(74);
+
     &__menu-button {
       display: none;
     }
