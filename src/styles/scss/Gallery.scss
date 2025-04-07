@@ -12,3 +12,18 @@
     }
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .gallery {
+    &__image {
+      &--mobile {
+        display: none;
+      }
+
+      &--desktop {
+        display: block;
+        width: 25%;
+      }
+    }
+  }
+}
