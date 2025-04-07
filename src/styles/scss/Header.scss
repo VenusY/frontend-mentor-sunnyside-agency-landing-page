@@ -163,6 +163,11 @@
 }
 
 @media screen and (min-width: 700px) {
+  .header {
+    height: 60vw;
+    max-height: 785px;
+  }
+
   .nav-bar {
     &__menu-button {
       width: 24px;
@@ -173,6 +178,30 @@
     &__link {
       width: 168px;
       max-width: unset;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .nav-bar {
+    padding: 32px 40px;
+    margin-bottom: u.rem(95);
+  }
+
+  .links {
+    width: calc(100% - 80px);
+  }
+
+  .intro {
+    &__heading {
+      margin-bottom: 90px;
+      font-size: u.rem(54);
+      letter-spacing: u.rem(13);
+      word-spacing: u.rem(-10);
+    }
+
+    &__arrow {
+      height: 112px;
     }
   }
 }
