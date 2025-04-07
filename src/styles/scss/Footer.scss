@@ -103,3 +103,15 @@
     }
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .footer {
+    &__nav {
+      gap: 58px;
+    }
+  }
+
+  .socials {
+    gap: 28px;
+  }
+}
